@@ -1,7 +1,10 @@
+import { useEffect } from 'react';
 import yourImage from '../Images/download.png'; 
 
 export default function Home() {
-
+  useEffect(() => {
+    document.title = 'Home';
+  }, []);
   return (
       <div className="home d-flex justify-content-center align-items-center text-white" style={{ backgroundColor:'#1abc9c', height: '100vh',
       width: '100vw'}}>

@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = 'Cotact';
+  }, []);
   return (
     <div className="mb-4">
       <div className="pt-3 container">

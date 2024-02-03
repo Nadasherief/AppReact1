@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image1 from '../Images/poert1.png'; 
 import Image2 from '../Images/port2.png'; 
 import Image3 from '../Images/port3.png'; 
 
 
 export default function Portfolio() {
+  useEffect(() => {
+    document.title = 'Portfolio';
+  }, []);
   const containerStyle = {
     display: 'flex',
     height: '100vh', 

@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function About() {
+  useEffect(() => {
+    document.title = 'About';
+  }, []);
   return (
     <div className="about text-white d-flex justify-content-center align-items-center" style={{ backgroundColor:'#1abc9c',height: '100vh',width: '100vw'}}>
     <div className="container">
